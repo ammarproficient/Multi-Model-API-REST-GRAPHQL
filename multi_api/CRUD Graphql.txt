@@ -57,7 +57,7 @@ mutation {
 
 ACCESS TOKEN GRAPHQL
 mutation {
-  tokenAuth(username: "ammar", password: "123") {
+  tokenAuth(username: "admin", password: "123") {
     token
   }
 }
@@ -66,7 +66,7 @@ mutation {
 
 ACCESS TOKEN REST API
 {
-    "username": "ammar",
+    "username": "admin",
     "password": "123"
 }
 
