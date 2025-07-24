@@ -1,0 +1,72 @@
+CREATE
+mutation {
+  createBurger(name: "Zinger", price: 450, flavour: "spicy") {
+    burger {
+      id
+      name
+      price
+      flavour
+    }
+  }
+}
+
+
+ALL ID
+{
+  allBurgers {
+    id
+    name
+    price
+    flavour
+  }
+}
+
+
+
+SINGLE ID
+{
+  burger(id: 1) {
+    name
+    price
+    flavour
+  }
+}
+
+
+UPDATE
+mutation {
+  updateBurger(id: 1, name: "Zinger Max", price: 550) {
+    burger {
+      id
+      name
+      price
+      flavour
+    }
+  }
+}
+
+
+
+DELETE
+mutation {
+  deleteBurger(id: 1) {
+    ok
+  }
+}
+
+
+ACCESS TOKEN GRAPHQL
+mutation {
+  tokenAuth(username: "ammar", password: "123") {
+    token
+  }
+}
+
+
+
+ACCESS TOKEN REST API
+{
+    "username": "ammar",
+    "password": "123"
+}
+
